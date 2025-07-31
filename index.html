@@ -72,21 +72,41 @@
 
     <!-- Hero Section -->
     <section id="accueil" class="min-h-screen flex items-center justify-center px-4 pt-20">
-        <div class="container mx-auto text-center">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">
-                    Merveille Susuni
-                </h1>
-                <h2 class="text-xl md:text-2xl font-light mb-8 text-blue-300 fade-in-delay-1">
-                    Directeur artistique, coach mannequin et entrepreneur digital
-                </h2>
-                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed fade-in-delay-2">
-                    Fondateur de Mediagrowth Agency, Susatt Agency, promoteur de Africa Fashion Awards et directeur artistique à MODELS ACADEMY MANAGEMENT.
-                </p>
-                <div class="fade-in-delay-3">
-                    <a href="#about" class="btn-primary inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                        Découvrir mon parcours
-                    </a>
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!-- Photo Hero -->
+                <div class="order-2 md:order-1 fade-in">
+                    <div class="relative">
+                        <div class="hero-image-placeholder bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-xl aspect-[4/5] flex items-center justify-center">
+                            <div class="text-center text-slate-400">
+                                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <p class="text-sm">Photo de Merveille Susuni<br>À ajouter</p>
+                            </div>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/20 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/10 rounded-full blur-xl"></div>
+                    </div>
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-1 md:order-2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 fade-in">
+                        Merveille Susuni
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-light mb-8 text-blue-300 fade-in-delay-1">
+                        Directeur artistique, coach mannequin et entrepreneur digital
+                    </h2>
+                    <p class="text-lg md:text-xl mb-12 leading-relaxed fade-in-delay-2">
+                        Fondateur de Mediagrowth Agency, Susatt Agency, promoteur de Africa Fashion Awards et directeur artistique à MODELS ACADEMY MANAGEMENT.
+                    </p>
+                    <div class="fade-in-delay-3">
+                        <a href="#about" class="btn-primary inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                            Découvrir mon parcours
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,10 +114,28 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 px-4">
-        <div class="container mx-auto max-w-4xl">
+        <div class="container mx-auto max-w-6xl">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">À propos</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <!-- Photo About -->
+                <div class="order-2 md:order-1">
+                    <div class="relative">
+                        <div class="about-image-placeholder bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-xl aspect-[4/3] flex items-center justify-center">
+                            <div class="text-center text-slate-400">
+                                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <p class="text-sm">Photo professionnelle<br>À ajouter</p>
+                            </div>
+                        </div>
+                        <!-- Decorative frame -->
+                        <div class="absolute inset-0 rounded-xl border-2 border-blue-400/20 transform rotate-2"></div>
+                        <div class="absolute inset-0 rounded-xl border-2 border-blue-500/10 transform -rotate-1"></div>
+                    </div>
+                </div>
+                
+                <!-- About Content -->
+                <div class="order-1 md:order-2 space-y-6">
                     <p class="text-lg leading-relaxed">
                         Passionné par l'art, la mode et l'entrepreneuriat digital, je suis Merveille Susuni, une personnalité influente de l'industrie créative béninoise et africaine.
                     </p>
@@ -108,7 +146,10 @@
                         En tant que directeur artistique et coach mannequin, je guide les talents émergents vers l'excellence professionnelle, tout en développant des stratégies créatives qui redéfinissent les standards de l'industrie.
                     </p>
                 </div>
-                <div>
+            </div>
+            
+            <!-- Expertise Cards -->
+            <div class="max-w-4xl mx-auto">
                     <h3 class="text-2xl font-semibold mb-8 text-blue-300 text-center">Expertise</h3>
                     <div class="grid grid-cols-2 gap-4">
                         <!-- Direction artistique -->
@@ -162,51 +203,84 @@
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Mes Projets</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Mediagrowth Agency -->
-                <div class="project-card bg-slate-800/50 p-8 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-                    <div class="mb-6">
-                        <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
-                        <h3 class="text-2xl font-semibold mb-4">Mediagrowth Agency</h3>
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            Agence spécialisée dans la croissance digitale et le marketing stratégique pour les entreprises africaines. Solutions innovantes pour maximiser la visibilité et l'impact digital.
-                        </p>
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105 overflow-hidden">
+                    <!-- Project Image -->
+                    <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
+                        <div class="text-center text-slate-400">
+                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <p class="text-xs">Image Mediagrowth<br>À ajouter</p>
+                        </div>
                     </div>
-                    <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                        En savoir plus
-                    </button>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mb-4">Mediagrowth Agency</h3>
+                            <p class="text-gray-300 leading-relaxed mb-6">
+                                Agence spécialisée dans la croissance digitale et le marketing stratégique pour les entreprises africaines. Solutions innovantes pour maximiser la visibilité et l'impact digital.
+                            </p>
+                        </div>
+                        <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+                            En savoir plus
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Susatt Agency -->
-                <div class="project-card bg-slate-800/50 p-8 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-                    <div class="mb-6">
-                        <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                        <h3 class="text-2xl font-semibold mb-4">Susatt Agency</h3>
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            Agence créative dédiée au développement artistique et à la gestion de talents dans l'industrie de la mode et du divertissement en Afrique.
-                        </p>
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105 overflow-hidden">
+                    <!-- Project Image -->
+                    <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
+                        <div class="text-center text-slate-400">
+                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <p class="text-xs">Image Susatt<br>À ajouter</p>
+                        </div>
                     </div>
-                    <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                        En savoir plus
-                    </button>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mb-4">Susatt Agency</h3>
+                            <p class="text-gray-300 leading-relaxed mb-6">
+                                Agence créative dédiée au développement artistique et à la gestion de talents dans l'industrie de la mode et du divertissement en Afrique.
+                            </p>
+                        </div>
+                        <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+                            En savoir plus
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Africa Fashion Awards -->
-                <div class="project-card bg-slate-800/50 p-8 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-                    <div class="mb-6">
-                        <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                        </svg>
-                        <h3 class="text-2xl font-semibold mb-4">Africa Fashion Awards</h3>
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            Événement prestigieux célébrant l'excellence et l'innovation dans l'industrie de la mode africaine, mettant en lumière les talents émergents et établis.
-                        </p>
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105 overflow-hidden">
+                    <!-- Project Image -->
+                    <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
+                        <div class="text-center text-slate-400">
+                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <p class="text-xs">Image Fashion Awards<br>À ajouter</p>
+                        </div>
                     </div>
-                    <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                        En savoir plus
-                    </button>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mb-4">Africa Fashion Awards</h3>
+                            <p class="text-gray-300 leading-relaxed mb-6">
+                                Événement prestigieux célébrant l'excellence et l'innovation dans l'industrie de la mode africaine, mettant en lumière les talents émergents et établis.
+                            </p>
+                        </div>
+                        <button class="btn-secondary w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-night-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+                            En savoir plus
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

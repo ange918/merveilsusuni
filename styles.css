@@ -229,3 +229,67 @@ section {
         background-attachment: fixed;
     }
 }
+
+/* Image placeholder styles */
+.hero-image-placeholder,
+.about-image-placeholder,
+.project-image-placeholder {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hero-image-placeholder:hover,
+.about-image-placeholder:hover,
+.project-image-placeholder:hover {
+    border-color: var(--blue-400);
+    background-color: rgba(96, 165, 250, 0.05);
+}
+
+/* Hero image decorative effects */
+.hero-image-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-image-placeholder:hover::before {
+    opacity: 1;
+}
+
+/* About image decorative frames animation */
+.about-image-placeholder + div {
+    transition: transform 0.3s ease;
+}
+
+.about-image-placeholder:hover + div {
+    transform: rotate(3deg);
+}
+
+.about-image-placeholder:hover + div + div {
+    transform: rotate(-2deg);
+}
+
+/* Project image placeholder effects */
+.project-image-placeholder {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+}
+
+.project-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, #334155 100%);
+}
+
+/* Responsive image adjustments */
+@media (max-width: 768px) {
+    .hero-image-placeholder,
+    .about-image-placeholder {
+        aspect-ratio: 4/3;
+    }
+    
+    .project-image-placeholder {
+        aspect-ratio: 16/10;
+    }
+}
