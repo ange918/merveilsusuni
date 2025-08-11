@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -77,12 +78,17 @@
                 <!-- Photo Hero -->
                 <div class="order-2 md:order-1 fade-in">
                     <div class="relative">
-                        <div class="hero-image-placeholder bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-xl aspect-[4/5] flex items-center justify-center">
-                            <div class="text-center text-slate-400">
-                                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                <p class="text-sm">Photo de Merveille Susuni<br>À ajouter</p>
+                        <div class="hero-image-placeholder bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-xl aspect-[4/5] flex items-center justify-center overflow-hidden">
+                            <!-- Carousel Container -->
+                            <div id="hero-carousel" class="relative w-full h-full">
+                                <!-- Image 1 -->
+                                <img src="images/IMG-20250811-WA0103.jpg" alt="Photo de Merveille Susuni" class="hero-carousel-image absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-1000 opacity-100" />
+                                <!-- Image 2 -->
+                                <img src="images/IMG-20250811-WA0104.jpg" alt="Photo de Merveille Susuni" class="hero-carousel-image absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-1000 opacity-0" />
+                                <!-- Image 3 -->
+                                <img src="images/IMG-20250811-WA0105.jpg" alt="Photo de Merveille Susuni" class="hero-carousel-image absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-1000 opacity-0" />
+                                <!-- Image 4 -->
+                                <img src="images/IMG-20250811-WA0106.jpg" alt="Photo de Merveille Susuni" class="hero-carousel-image absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-1000 opacity-0" />
                             </div>
                         </div>
                         <!-- Decorative elements -->
@@ -122,10 +128,7 @@
                     <div class="relative">
                         <div class="about-image-placeholder bg-slate-800/50 border-2 border-dashed border-slate-600 rounded-xl aspect-[4/3] flex items-center justify-center">
                             <div class="text-center text-slate-400">
-                                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                <p class="text-sm">Photo professionnelle<br>À ajouter</p>
+                                <img src="images/IMG-20250811-WA0107.jpg" alt="Photo professionnelle de Merveille Susuni" class="w-full h-full object-cover rounded-xl" />
                             </div>
                         </div>
                         <!-- Decorative frame -->
@@ -207,10 +210,7 @@
                     <!-- Project Image -->
                     <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
                         <div class="text-center text-slate-400">
-                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                            <p class="text-xs">Image Mediagrowth<br>À ajouter</p>
+                            <img src="images/mediagrowthmarketing_logo.jpeg" alt="Logo Mediagrowth Agency" class="w-full h-full object-cover rounded-xl" />
                         </div>
                     </div>
                     <div class="p-8">
@@ -234,10 +234,7 @@
                     <!-- Project Image -->
                     <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
                         <div class="text-center text-slate-400">
-                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                            <p class="text-xs">Image Susatt<br>À ajouter</p>
+                            <img src="images/images.png" alt="Image Susatt Agency" class="w-full h-full object-cover rounded-xl" />
                         </div>
                     </div>
                     <div class="p-8">
@@ -261,16 +258,13 @@
                     <!-- Project Image -->
                     <div class="project-image-placeholder bg-slate-700/50 border-b-2 border-dashed border-slate-600 aspect-[16/9] flex items-center justify-center">
                         <div class="text-center text-slate-400">
-                            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                            <p class="text-xs">Image Fashion Awards<br>À ajouter</p>
+                            <img src="images/merveil.jpg" alt="Image Africa Fashion Awards" class="w-full h-full object-cover rounded-xl" />
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="mb-6">
                             <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                             </svg>
                             <h3 class="text-2xl font-semibold mb-4">Africa Fashion Awards</h3>
                             <p class="text-gray-300 leading-relaxed mb-6">

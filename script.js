@@ -1,6 +1,34 @@
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Hero Carousel Functionality
+    function initHeroCarousel() {
+        const carouselImages = document.querySelectorAll('.hero-carousel-image');
+        let currentImageIndex = 0;
+        const totalImages = carouselImages.length;
+        
+        function showImage(index) {
+            // Hide all images
+            carouselImages.forEach(img => {
+                img.style.opacity = '0';
+            });
+            
+            // Show current image
+            carouselImages[index].style.opacity = '1';
+        }
+        
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            showImage(currentImageIndex);
+        }
+        
+        // Start the carousel - change image every 5 seconds
+        setInterval(nextImage, 5000);
+    }
+    
+    // Initialize hero carousel
+    initHeroCarousel();
+    
     // Mobile menu functionality
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');

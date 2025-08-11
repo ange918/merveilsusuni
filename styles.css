@@ -293,3 +293,34 @@ section {
         aspect-ratio: 16/10;
     }
 }
+
+/* Hero Carousel Styles */
+.hero-carousel-image {
+    transition: opacity 1s ease-in-out;
+}
+
+#hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Carousel fade effect */
+.hero-carousel-image {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-carousel-image:first-child {
+    opacity: 1;
+}
+
+/* Carousel container hover effect */
+#hero-carousel:hover .hero-carousel-image {
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Ensure smooth transitions */
+.hero-carousel-image {
+    will-change: opacity;
+}
