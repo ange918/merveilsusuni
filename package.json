@@ -12,6 +12,7 @@
     "start": "turbo run start"
   },
   "devDependencies": {
+    "next": "^16.0.0",
     "turbo": "^2.0.0",
     "typescript": "^5.3.0"
   },
