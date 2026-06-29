@@ -34,7 +34,7 @@ export default function RegisterPage() {
       return;
     }
 
-    router.push('/auraplan');
+    router.push('/onboarding');
     router.refresh();
   };
 
