@@ -4,7 +4,6 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import frLocale from '@fullcalendar/core/locales/fr';
 
 type CalEvent = {
   id: string;
@@ -39,24 +38,23 @@ export default function CalendarView({ events }: { events: CalEvent[] }) {
           cursor: pointer;
           border-radius: 4px;
         }
-        .fullcalendar-dark .fc-daygrid-day {
-          background: transparent;
-        }
       `}</style>
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
-        locale={frLocale}
         events={events}
         headerToolbar={{
           left: 'prev,next today',
           center: 'title',
           right: 'dayGridMonth,timeGridWeek,timeGridDay',
         }}
-        height="auto"
-        eventClick={(info) => {
-          info.jsEvent.preventDefault();
+        buttonText={{
+          today: "Aujourd'hui",
+          month: 'Mois',
+          week: 'Semaine',
+          day: 'Jour',
         }}
+        height="auto"
       />
     </div>
   );
