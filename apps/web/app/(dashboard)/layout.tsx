@@ -26,7 +26,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
     .eq('statut', 'actif');
 
   const activeModules = modules?.map(m => m.module) ?? [];
-  const orgName = (membre.organisations as { nom: string } | null)?.nom ?? 'Mon organisation';
+  const orgName = (membre.organisations as unknown as { nom: string } | null)?.nom ?? 'Mon organisation';
 
   return (
     <div className="flex h-screen overflow-hidden">

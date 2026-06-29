@@ -32,7 +32,7 @@ export default async function DashboardPage() {
     { id: 'agenda', icon: '🗓️', title: 'Agenda personnel', desc: 'Programme et rappels 24h', href: '/agenda', color: 'purple' },
   ];
 
-  const orgName = (membre.organisations as { nom: string } | null)?.nom ?? 'Mon organisation';
+  const orgName = (membre.organisations as unknown as { nom: string } | null)?.nom ?? 'Mon organisation';
 
   return (
     <div className="p-8">
